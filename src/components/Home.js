@@ -86,10 +86,7 @@ export default function Home() {
         >
           <div className='p-0 md:p-10 w-[100%]'>
             <SwiperSlide className='pb-10 pl-10'>
-            <p className='text-slate-600 pl-0 md:pl-10 text-left w-[100%] break-words'>Soy un estudiante autodidacta de programación web, termine mi carrera en ingeniería en 
-                            sistemas en ISIMA, pero aún me falta realizar mi servicio social y prácticas profesionales, y con este curriculum al mostrar los 
-                            lenguajes que están en mi conocimiento, espero poder conseguir un empleo como becario para poder liberar mi servicio social y 
-                            también poder crecer profesionalmente en este mundo de la tecnología. </p>
+            <p className='text-slate-600 pl-0 md:pl-10 text-left w-[100%] break-words'>I am a self-taught student of web programming, I finished my degree in engineering at systems at ISIMA, but I still have to do my social service and professional internships, and with this portfolio where I show the             languages ​​that are in my knowledge, I hope to be able to get a job as an intern to be able to release my social service and also being able to grow professionally in this world of technology. </p>
             </SwiperSlide>
             <SwiperSlide className='pb-10 pl-0 md:pl-10'>
               <div className='text-left ml-10 md:ml-24'>
