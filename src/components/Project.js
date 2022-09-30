@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useParams , useNavigate, NavLink} from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useProjectsContext } from '../context/GlobalContext';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Autoplay } from "swiper";
@@ -18,7 +18,6 @@ export default function Project() {
     const [loading, setLoading] = useState(true);
     const { projects} = useProjectsContext();
     const params = useParams();
-    const navigate = useNavigate();
 
     useEffect(() => {
         if(params.id){
@@ -30,7 +29,7 @@ export default function Project() {
                 setLoading(false);
             }, 400);
         }
-    }, [])
+    }, [params.id])
     
   return (
     <div>
@@ -57,7 +56,7 @@ export default function Project() {
                 {project.images.map(image => (
                     <SwiperSlide key={image} className="px-6 sm:px-16 pb-10 md:pb-24 w-[100%]">
                         <div>
-                            <img src={process.env.PUBLIC_URL + `/images/${image}`} className='w-[100%]'/>
+                            <img src={process.env.PUBLIC_URL + `/images/${image}`} className='w-[100%]' alt="img.png"/>
                         </div>
                     </SwiperSlide>
                 ))}

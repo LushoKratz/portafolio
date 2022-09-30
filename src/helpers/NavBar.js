@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import {FaHome} from 'react-icons/fa'
-import {BsFillArrowUpCircleFill, BsFillPersonLinesFill,BsFillTelephoneFill, BsGithub, BsLinkedin, BsWhatsapp} from 'react-icons/bs'
-import {MdOutlineMiscellaneousServices,MdCancel} from 'react-icons/md'
+import {BsFillArrowUpCircleFill, BsGithub, BsLinkedin, BsWhatsapp} from 'react-icons/bs'
+import {MdCancel} from 'react-icons/md'
 import {FaFolderOpen} from 'react-icons/fa'
 import {HiOutlineMenuAlt3} from 'react-icons/hi'
 import { NavLink } from 'react-router-dom'
@@ -25,13 +25,13 @@ export default function NavBar() {
     <React.Fragment>
 
     <nav className="bg-[#614EE7] w-100 h-16 md:h-24 p-4 pb-10 px-3 flex justify-between sticky top-0 z-10">
-        <NavLink to='/'><h2 className="text-white font-bold text-2xl mt-2 flex sm:4xl lg:text-6xl lg:mt-0"><FaFolderOpen />Portfolio</h2></NavLink>
+        <NavLink to='/portfolio'><h2 className="text-white font-bold text-2xl mt-2 flex sm:4xl lg:text-6xl lg:mt-0"><FaFolderOpen />Portfolio</h2></NavLink>
         <div>
         <HiOutlineMenuAlt3 className='text-4xl text-white flex xl:hidden md:text-6xl hover:text-indigo-300 cursor-pointer' onClick={handleClick}/>
         </div>
         <div className="flex justify-around hidden xl:flex">
-        <NavLink to='/' className='font-bold text-white mt-5 mr-5 text-2xl flex'><FaHome  className='mt-1 mr-1'/>Home</NavLink>
-        <NavLink to='/portfolio' className='font-bold text-white mt-5 mr-5 text-2xl flex'><FaFolderOpen  className='mt-1 mr-1'/>Portfolio</NavLink>
+        <NavLink to='/portfolio' className='font-bold text-white mt-5 mr-5 text-2xl flex'><FaHome  className='mt-1 mr-1'/>Home</NavLink>
+        <NavLink to='/projects' className='font-bold text-white mt-5 mr-5 text-2xl flex'><FaFolderOpen  className='mt-1 mr-1'/>Portfolio</NavLink>
         </div>
     </nav>
 
@@ -42,8 +42,8 @@ export default function NavBar() {
           </div>
           <br /><br />
           <div className="flex flex-col ">
-          <NavLink to='/' className='font-bold text-white mt-5 mr-5 text-[1.2rem] sm:text-2xl flex' onClick={handleClick}><FaHome  className='mt-1 mr-1'/>Home</NavLink>
-          <NavLink to='/portfolio' className='font-bold text-white mt-5 mr-5 text-[1.2rem] sm:text-2xl flex' onClick={handleClick}><FaFolderOpen  className='mt-1 mr-1'/>Portfolio</NavLink>
+          <NavLink to='/portfolio' className='font-bold text-white mt-5 mr-5 text-[1.2rem] sm:text-2xl flex' onClick={handleClick}><FaHome  className='mt-1 mr-1'/>Home</NavLink>
+          <NavLink to='/projects' className='font-bold text-white mt-5 mr-5 text-[1.2rem] sm:text-2xl flex' onClick={handleClick}><FaFolderOpen  className='mt-1 mr-1'/>Portfolio</NavLink>
           </div>
       </nav>
 

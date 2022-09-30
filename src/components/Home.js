@@ -1,6 +1,5 @@
-import React,{useEffect, useRef} from 'react'
+import React from 'react'
 import BackgroundSVG from '../resources/backgroundSVG.svg';
-import FrontendSVG from '../resources/frontend.svg';
 import img from '../resources/photo.png';
 import {BsArrowDownCircleFill, BsFillPersonLinesFill, BsFillCheckCircleFill} from 'react-icons/bs';
 import {BiCodeAlt} from 'react-icons/bi'
@@ -69,7 +68,7 @@ export default function Home() {
 
         <div className='flex flex-row'>
           <div className='flex justify-center flex-row md:flex-col hidden lg:flex'>
-            <img src={DeveloperSVG} className="w-[10%] md:w-[100%] text-center margin-auto "/>
+            <img src={DeveloperSVG} className="w-[10%] md:w-[100%] text-center margin-auto " alt='img.png'/>
           </div>
          
 
@@ -169,7 +168,7 @@ export default function Home() {
       ))}
     </div>
     <div className='mt-24 flex flex-end m-auto w-[100%]'>
-      <NavLink to='/portfolio' className='px-4 md:px-24 py-2 bg-indigo-500 hover:bg-indigo-600 font-bold text-[1.1rem] md:text-2xl text-white rounded m-auto shadow-lg shadow-indigo-300'>View all projects...</NavLink>
+      <NavLink to='/projects' className='px-4 md:px-24 py-2 bg-indigo-500 hover:bg-indigo-600 font-bold text-[1.1rem] md:text-2xl text-white rounded m-auto shadow-lg shadow-indigo-300'>View all projects...</NavLink>
     </div>
 
     <div className="text-5xl font-extrabold ... mt-20">
