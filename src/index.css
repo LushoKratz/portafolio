@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: #f1f5f9;
+}
+
+.swiper-pagination-bullet{ 
+    --swiper-theme-color: #614EE7;
+ }
+.swiper-pagination-bullet-active{ 
+    --swiper-theme-color: #614EE7;
+ }
+
+.swiper-button-next {
+    --swiper-theme-color: #614EE7;
+}
+
+.swiper-button-next:hover {
+    --swiper-theme-color: #6317c5;
+}
+
+.swiper-button-prev {
+    --swiper-theme-color: #614EE7;
+}
+
+.swiper-button-prev:hover {
+    --swiper-theme-color: #6317c5;
+}

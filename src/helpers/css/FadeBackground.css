@@ -1,0 +1,4 @@
+.FadeBackground{
+    background-color: black;
+    filter: opacity(0.5);
+}
